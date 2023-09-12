@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tasty Recipes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+    <body>
+
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-10">
+                            <div class="main-menu   d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                         <li><a href="{{ url_for('index') }}">home</a></li>
+                                        <li><a href="{{ url_for('about') }}">about</a></li>
+                                        <li><a href="{{ url_for('view_recipes') }}">Recipes</a></li>
+                                        <li><form
+                                                class="form-inline my-2 my-lg-0"
+                                                action="{{ url_for('search_results') }}" method="GET">
+                                            <input class="form-control mr-sm-2" type="search" placeholder="Search" name="query">
+                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                        </form>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>Recipe Book </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /bradcam_area  -->
+
+    <!-- recepie_area_start  -->
+    <div class="recepie_area plus_padding ">
+        <div class="container" >
+
+            <div class="row " id="recipe-list-name">
+
+                {% for recipe in recipes %}
+                 <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single_recepie text-center">
+                        <div class="recepie_thumb">
+                             <img src="{{ url_for('static', filename=recipe['image_path']) }}" alt="Recipe Image">
+
+                        </div>
+                        <h3>{{recipe['name']}}</h3>
+                        <span>{{recipe['category']}}</span>
+                        <p>Time Needs: {{recipe['time']}}</p>
+                       <a href="{{ url_for('recipes_details', recipe_id=recipe['id']) }}" class="line_btn">View Full Recipe</a>
+
+
+                    </div>
+                 </div>
+                {% endfor %}
+
+
+
+        </div>
+    </div>
+    <!-- /recepie_area_start  -->
+
+<!--                     new Re. start  -->
+<div class="container   text-center">
+    <div class="row  ">
+        <div class="col-md"></div>
+        <div class="col-md font-weight-bold">Add your own recipes</div>
+        <div class="col-md"></div>
+    </div>
+    <div class="row ">
+        <div class="col-md-5"></div>
+        <div class="col-md-2"><a href="{{ url_for('add_recipe') }}"><button
+                class="btn btn-outline-success form-group" type="submit"
+                id="#">Add
+            Recipes</button></a></div>
+        <div class="col-md-5"></div>
+    </div>
+</div>
+
+<!--                     new Re. end   -->
+
+
+    <!-- latest_trand     -->
+    <div class="latest_trand_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="trand_info text-center">
+                        <p>Thousands of recipes are waiting to be watched</p>
+                        <h3>Discover latest trending recipes</h3>
+                        <a href="#" class="boxed-btn3">View all Recipes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ latest_trand     -->
+
+
+     <!-- footer  -->
+    <footer class="footer">
+
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-8 col-md-8">
+
+                        </div>
+                        <div class="col-xl-4 col-md-4">
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-dribbble"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-behance"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!--/ footer  -->
+
+
+    <!-- JS here -->
+     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
