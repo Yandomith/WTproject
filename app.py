@@ -4,8 +4,6 @@ import os
 import uuid
 from werkzeug.utils import secure_filename
 
-import os
-
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # Set a secret key for flash messages
 
