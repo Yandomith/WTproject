@@ -1,0 +1,157 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza",
+        "about": "Pizza has a rich history that dates back to ancient civilizations. Its origins can be traced to ancient Egypt, Greece, and Rome, where flatbreads with various toppings were commonly consumed. However, the modern pizza as we know it today is often associated with Naples, Italy. In the 18th century, Neapolitans started adding tomatoes as a topping to their flatbreads, leading to the creation of the pizza we recognize today.",
+        "time": "30 min",
+        "category": "Main Dish",
+        "ingredients": [
+            "Dough",
+            "Tomato Sauce",
+            "Mozzarella Cheese",
+            "Pepperoni",
+            "Bell Peppers",
+            "Onions",
+            "Mushrooms",
+            "Olive Oil"
+        ],
+        "steps": [
+            "Prepare the pizza dough.",
+            "Spread tomato sauce evenly on the dough.",
+            "Add a layer of mozzarella cheese.",
+            "Top with pepperoni slices.",
+            "Add sliced bell peppers, onions, and mushrooms.",
+            "Drizzle with olive oil.",
+            "Bake in a preheated oven at 475\u00c2\u00b0F (245\u00c2\u00b0C) for 12-15 minutes.",
+            "Slice and enjoy your homemade pizza!"
+        ],
+        "image_path": "uploads/pizza.png"
+    },
+    {
+        "id": 2,
+        "name": "Burger",
+        "about": "The burger, also known as a hamburger, is a classic American dish loved worldwide. It consists of a seasoned ground meat patty (usually beef) cooked to perfection, served in a sliced bun, and topped with various ingredients such as lettuce, tomato, cheese, onions, and condiments like ketchup and mayonnaise.",
+        "time": "20 min",
+        "category": "Main Dish",
+        "ingredients": [
+            "Ground Beef",
+            "Burger Buns",
+            "Lettuce",
+            "Tomato Slices",
+            "Cheese Slices",
+            "Onion Slices",
+            "Ketchup",
+            "Mayonnaise"
+        ],
+        "steps": [
+            "Divide the ground beef into patties and season with salt and pepper.",
+            "Heat a grill or skillet over medium-high heat and cook the patties to your desired level of doneness.",
+            "Toast the burger buns on the grill or in a toaster.",
+            "Place a lettuce leaf on the bottom bun.",
+            "Add a cooked beef patty on top of the lettuce.",
+            "Top with tomato slices, cheese slices, and onion slices.",
+            "Spread ketchup and mayonnaise on the top bun.",
+            "Place the top bun over the toppings to complete the burger."
+        ],
+        "image_path": "uploads/burger.png"
+    },
+    {
+        "id": 3,
+        "name": "Pancakes",
+        "about": "Pancakes are a delightful breakfast treat loved by people of all ages. They are fluffy, golden brown, and can be served with a variety of toppings such as maple syrup, fresh berries, or whipped cream. Pancakes are a classic morning comfort food that is quick and easy to prepare.",
+        "time": "15 min",
+        "category": "Breakfast",
+        "ingredients": [
+            "1 cup all-purpose flour",
+            "2 tablespoons sugar",
+            "1 teaspoon baking powder",
+            "1/2 teaspoon baking soda",
+            "1/4 teaspoon salt",
+            "1 cup buttermilk",
+            "1 large egg",
+            "2 tablespoons melted butter"
+        ],
+        "steps": [
+            "In a mixing bowl, whisk together flour, sugar, baking powder, baking soda, and salt.",
+            "In another bowl, whisk together buttermilk, egg, and melted butter.",
+            "Pour the wet ingredients into the dry ingredients and stir until just combined. Don't overmix; it's okay if there are a few lumps.",
+            "Heat a non-stick skillet or griddle over medium-high heat and lightly grease it with butter or oil.",
+            "Pour 1/4 cup of pancake batter onto the skillet for each pancake.",
+            "Cook until bubbles form on the surface, then flip and cook until golden brown on both sides.",
+            "Serve pancakes hot with your favorite toppings like syrup, berries, or whipped cream.",
+            "Enjoy your fluffy homemade pancakes!"
+        ],
+        "image_path": "uploads/pancake.png"
+    },
+    {
+        "id": 4,
+        "name": "Turkey and Avocado Sandwich",
+        "about": "This turkey and avocado sandwich is a healthy and flavorful choice for a quick lunch. It features lean turkey, creamy avocado, fresh veggies, and a zesty dressing, all stacked between slices of whole-grain bread.",
+        "time": "10 min",
+        "category": "Lunch",
+        "ingredients": [
+            "4 slices of whole-grain bread",
+            "8 oz sliced turkey breast",
+            "1 ripe avocado, sliced",
+            "Lettuce leaves",
+            "Sliced tomatoes",
+            "Red onion slices",
+            "Dijon mustard",
+            "Mayonnaise"
+        ],
+        "steps": [
+            "Spread a thin layer of Dijon mustard on two slices of whole-grain bread.",
+            "Place lettuce leaves, sliced tomatoes, and red onion slices on one slice of bread.",
+            "Add the sliced turkey breast on top of the veggies.",
+            "Layer avocado slices on the turkey.",
+            "Spread mayonnaise on the remaining two slices of bread and place them on top of the avocado.",
+            "Cut the sandwich in half diagonally and serve immediately."
+        ],
+        "image_path": "uploads/sandwich.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Classic Spaghetti Bolognese",
+        "about": "Classic Spaghetti Bolognese is a comforting Italian dish known for its rich and savory meat sauce served over cooked spaghetti. It's a family favorite that's both hearty and delicious.",
+        "time": "45 min",
+        "category": "Main Dish",
+        "ingredients": [
+            "8 oz ground beef",
+            "8 oz ground pork",
+            "1 onion, finely chopped",
+            "2 cloves garlic, minced",
+            "1 can (28 oz) crushed tomatoes",
+            "1 teaspoon dried oregano",
+            "Salt and pepper to taste"
+        ],
+        "steps": [
+            "In a large skillet, brown the ground beef and ground pork over medium-high heat until cooked through. Drain excess fat if needed.",
+            "Add the finely chopped onion and minced garlic to the skillet and saut\u00e9 until softened.",
+            "Stir in the crushed tomatoes and red wine (if using).",
+            "Season with dried oregano, salt, and pepper. Simmer the sauce for about 20-25 minutes, stirring occasionally.",
+            "While the sauce simmers, cook spaghetti according to package instructions until al dente. Drain and set aside",
+            "Serve the Bolognese sauce over cooked spaghetti. Optionally, garnish with grated Parmesan cheese and fresh basil leaves.",
+            "Enjoy your classic Spaghetti Bolognese!"
+        ],
+        "image_path": "uploads/spaghetti.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Dal Bhat ",
+        "about": "D\u0101l bh\u0101t is a traditional meal originated from Nepal and popular in many areas of India, Pakistan and Bangladesh. It consists of steamed rice and a cooked lentil or other pulses stew called dal. It is a staple food in these countries. Bh\u0101t or ch\u0101wal means \"boiled rice\" in a number of Indo-Aryan languages",
+        "time": "30min ",
+        "category": "Main Dish",
+        "ingredients": [
+            "Dal ",
+            "Rice ",
+            "Beans",
+            "Salt ",
+            "water "
+        ],
+        "steps": [
+            "Make Dal ",
+            "make bhat "
+        ],
+        "image_path": "uploads/636a5f519c7e80680e056e20jpeg.jpg"
+    }
+]

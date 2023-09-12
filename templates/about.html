@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tasty Recipes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+ <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-10">
+                            <div class="main-menu   d-none d-lg-block">
+                                <ul id="navigation">
+                                    <li><a href="{{ url_for('view_recipes') }}">Recipes</a></li>
+                                    <li><a href="{{ url_for('index') }}">home</a></li>
+                                    <li><a href="{{ url_for('about') }}">about</a></li>
+
+                                    <li><form
+                                        class="form-inline my-2 my-lg-0"
+                                           action="{{ url_for('search_results') }}" method="GET">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" name="query">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                    </li>
+
+
+                                </ul>
+                                <nav>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>About Us</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /bradcam_area  -->
+
+    <!-- recepie_header_area  -->
+    <div class="recepie_header_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="recepie_text text-center">
+                        <h3>Recipe videos that never <br>
+                            misses any portion</h3>
+                            <p>Welcome to our recipe website, your digital gateway to a world of culinary delights! We are your go-to destination for all things food-related, offering a diverse and extensive collection of recipes to cater to your every culinary craving. Whether you're a seasoned chef or a beginner in the kitchen, we've got you covered with step-by-step instructions, mouthwatering visuals, and a community of food lovers ready to inspire and assist you on your gastronomic journey. Explore our treasure trove of recipes, from quick weeknight dinners to show-stopping desserts, and discover the joy of cooking like never before. We're here to make your cooking adventures both delicious and hassle-free, so dive in, start exploring, and let your culinary creativity flourish with us!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ recepie_header_area  -->
+
+    <!-- latest_trand     -->
+    <div class="latest_trand_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="trand_info text-center">
+                        <p>Thousands of recipes are waiting to be watched</p>
+                        <h3>Discover latest trending recipes</h3>
+                        <a href="Recipes.html" class="boxed-btn3">View all Recipes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ latest_trand     -->
+
+
+       <!-- footer  -->
+    <footer class="footer">
+
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-8 col-md-8">
+
+                        </div>
+                        <div class="col-xl-4 col-md-4">
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-dribbble"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-behance"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!--/ footer  -->
+
+
+    <!-- JS here -->
+      <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script
+            src="{{ url_for('static', filename='js/jqgituery-1.12.4.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+</body>
+
+</html>
