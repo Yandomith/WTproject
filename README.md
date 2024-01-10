@@ -10,7 +10,7 @@ CBook-Tasty Recipes is a web application developed using Flask, Python, HTML, CS
 
 - View a collection of tasty recipes.
 - Add new recipes to the database.
-- [Any additional features you'd like to highlight]
+- Dynamic Update list
 
 ## Technologies Used
 
@@ -49,6 +49,14 @@ CBook-Tasty Recipes is a web application developed using Flask, Python, HTML, CS
 1. Visit the website at [http://localhost:5000](http://localhost:5000).
 2. Explore the existing recipes.
 3. Add new recipes to the database.
+
+## Images 
+![homepage](https://github.com/Yandomith/WTproject/assets/99378940/656bb106-84d1-4c2e-bdab-6bb6b60af74e)
+![Screenshot 2024-01-10 182610](https://github.com/Yandomith/WTproject/assets/99378940/58b713c0-e69f-4430-a033-39fd7937990c)
+![Screenshot 2024-01-10 182549](https://github.com/Yandomith/WTproject/assets/99378940/cbe82fb6-7797-41b6-9975-e01414099392)
+![Screenshot 2024-01-10 182414](https://github.com/Yandomith/WTproject/assets/99378940/de94782a-cf37-4bf4-bcc1-9c6648b640b0)
+![Screenshot 2024-01-10 182629](https://github.com/Yandomith/WTproject/assets/99378940/45df7b70-224b-4249-8614-b57a03f57292)
+
 
 ## Contributing
 
