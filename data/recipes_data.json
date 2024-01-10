@@ -153,5 +153,17 @@
             "make bhat "
         ],
         "image_path": "uploads/636a5f519c7e80680e056e20jpeg.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Smith ",
+        "about": "",
+        "time": "",
+        "category": "Main Dish",
+        "ingredients": [],
+        "steps": [
+            "Just Call "
+        ],
+        "image_path": "uploads/images.jpg"
     }
 ]
